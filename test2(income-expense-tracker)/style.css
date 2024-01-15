@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#amount, #typeOfExpIn, #dropdownList{
+    padding: .5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto .5rem;
+    border: 1px solid rgb(41, 40, 40);
+    border-radius: 5px;
+}
+#inputs{
+    display: flex;
+    justify-content: center;    
+    margin: 1rem;
+}
+#entrybtn{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+}
+#incomeTable, #expenseTable{
+    width: 100%;
+    border-spacing: 0px 12px;
+}
+td{
+
+}
+.trGap{
+    background-color: rgb(18, 94, 18);
+    border-collapse: separate;
+    border: 1px solid black;
+}
+.exp-green td, .exp-red td{
+    background-color: rgb(18, 94, 18);
+    border-collapse: separate;
+    border: 1px solid black;
+}
+.exp-red td{
+    background-color: rgb(117, 22, 22);
+}
+#expenseTable{
+
+}
+tr{
+    border-collapse: separate;
+    margin: .5rem;
+}
+.sr-no{
+    width: 2rem;
+}
+.amtval{
+    width: 4rem; 
+}
+.item-des{
+    width: 10rem;
+}
+.btn{
+    margin-top: 2rem;
+    text-align: center;
+}
+#entrybtn{
+    background-color: rgb(41, 40, 40);
+    border: none;
+    border-radius: 20px;
+    padding: .4rem 5rem;
+    color: white;
+}
+.income-expense-tables{
+    display: flex;
+    /* justify-content: ; */
+}
+.in-head, .exp-head{
+    background-color: green;
+    width: 49vw;
+    padding: .8rem 0;
+}
+.exp-head{
+    background-color: red;
+}
+.expense-side, .income-side{
+    text-align: center;
+    margin-left: .5rem;
+    color: white;
+}
+.expense-side{
+    margin: 0 .5rem;
+}
+#totalSavingHead{
+}
+#totalSavingHead2{
+    background-color: grey;
+    padding: .8rem 0;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+.totalExpense2{
+    font-weight: 400;
+    padding: .8rem 0;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}

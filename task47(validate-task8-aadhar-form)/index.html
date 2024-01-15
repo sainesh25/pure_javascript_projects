@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhar Card Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <div class="aadhar-card">
+            <div class="aadhar-bg">
+
+            <div class="head">
+                <img src="./aadhar-card-icon.png" id="aadharCardImg" alt="" srcset="">
+                <h1 class="aadharHeading"><span class="orange">Aadhar</span>  Card <span class="green">Form</span></h1>
+            </div>
+            <form action="" id="aadharForm">
+                        
+                <label for="fname">First Name: </label>
+                <input class="focusing" id="fname" type="text" placeholder="First Name" name="Firstname" tabindex="1">
+                <br><br>
+
+                <label for="lname">Last Name: </label>
+                <input class="focusing" id="lname" type="text" placeholder="Last Name" name="Lastname" tabindex="2">
+                <br><br>
+                
+                <label for="fatherN">Fathers Name: </label>
+                <input class="focusing" id="fatherN" type="text" placeholder="Fathers Name" name="Fathersname" tabindex="3">
+                <br><br>
+
+                <label for="motherN">Mothers Name: </label>
+                <input class="focusing" id="motherN" type="text" placeholder="Mothers Name" name="Mothersname" tabindex="4">
+                <br><br>
+
+                <label>Gender: </label>
+                <input class="G" type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label>
+                <input class="G" type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+                <input class="G" type="radio" name="gender" id="others" value="Others">
+                <label for="others">Others</label>
+            <br><br>
+
+                <label for="age">Age: </label>
+                <input class="focusing" type="number" id="age" tabindex="5"><br><br>
+
+                <label for="date">Date of Birth: </label>
+                <input class="focusing" type="date" name="DOB" id="date">
+                <br><br>
+                
+                <label for="pan">Pan Card Number: </label>
+                <input class="focusing" type="text" name="panNo" id="pan" placeholder="If any" tabindex="6"><br><br>
+                
+                <label for="license">Driving License Number: </label>
+                <input class="focusing" type="text" name="DrivingNo" id="license" placeholder="If any" tabindex="7"><br><br>
+
+                <label for="add">Address: </label>
+                <textarea class="focusing" name="Address" id="add" cols="20" rows="10" placeholder="Wing/Flat number, Building Number/Name, Area, Locality" tabindex="8"></textarea>
+                <br><br>
+
+                <label for="district">District: </label>
+                <select class="focusing" name="districts" id="district">
+                    <option disabled selected>Select District</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                </select>
+
+                <label for="city">City: </label>
+                <select class="focusing" name="city" id="city">
+                    <option disabled selected>Select City</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Jaipur">Jaipur</option>
+                </select>
+            <br><br>
+
+                <label for="pin">Pin Code: </label>
+                <input class="focusing" type="text" placeholder="421301" id="pin" name="pincode" tabindex="9"><br><br>
+
+                <label for="state">State: </label>
+                <select class="focusing" name="state" id="state">
+                    <option disabled selected>Select State</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Kerala">Kerala</option>
+                </select>
+
+                <label for="country">Country: </label>
+                <input class="focusing" type="text" id="country" name="country" placeholder="India">
+                <br><br>
+
+                <label for="bankN">Bank Name: </label>
+                <input class="focusing" type="text" name="bankname" id="bankN" placeholder="Bank Name" tabindex="10"><br><br>
+                
+                <label for="bankNo">Bank Account Number: </label>
+                <input class="focusing" type="text" name="accNo" id="bankNo" tabindex="11"><br><br>
+
+                <input type="checkbox" name="terms" id="termsconds">
+                <label for="termsconds">I Agree to terms and Conditions</label><br><br>
+
+                <div class="last-section">
+                    <input id="btnSubmit" type="submit">
+                </div>
+                
+                <div id="error"></div>
+            </form>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>

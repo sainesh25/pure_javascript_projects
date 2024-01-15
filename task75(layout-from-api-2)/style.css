@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+main{
+    font-family: 'Poppins', sans-serif;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#getDataBtn{
+    background-color: rgb(42, 42, 42);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.image{
+    width: 100%;
+    height: 20rem;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.layoutForApi{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgb(42, 42, 42);
+    width: 19rem;
+    border-radius: 5px;
+}
+.filmInfo{
+    margin: 1rem 0 0;
+    text-align: center;
+}
+.titleMovie{
+    margin: .2rem;
+
+}
+.releaseYear{
+    margin: .2rem;
+    font-weight: 400;
+}
+.imdbId{
+    margin: 0;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 992px){
+
+}
+@media (max-width: 767px){
+    .layoutForApi{
+        width: 15rem;
+    }
+    .titleMovie{
+        font-size: 1rem;
+    }
+    .releaseYear{
+        font-size: .8rem;
+    }
+    .imdbId{
+        font-size: .7rem;
+    }
+    .image{
+        height: 18rem;
+    }
+    #getDataBtn{
+        width: 100%;
+
+    }
+}
+@media (max-width: 576px){
+    .layoutForApi{
+        width: 12rem;
+        padding: .5rem;
+        margin: .5rem;
+    }
+    .titleMovie{
+        font-size: .8rem;
+    }
+    .releaseYear{
+        font-size: .6rem;
+    }
+    .imdbId{
+        font-size: .5rem;
+    }
+    .image{
+        height: 16rem;
+    }
+    #getDataBtn{
+        font-size: .8rem;
+        padding: .2rem;
+    }
+
+}

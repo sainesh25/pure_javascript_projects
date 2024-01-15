@@ -1,0 +1,96 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    caret-color: darkslategrey;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.aadhar-bg{
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: #111725;
+    width: 29.4rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    position: relative;
+    font-weight: 500;
+}
+#fname, #lname, #motherN, #fatherN, #age, #pan, #license, #district, #date, #city, #pin, #country, #state, #bankN, #bankNo{
+    padding-left: .5rem;
+    border: 1px solid rgb(0, 183, 255);
+    height: 2rem;
+}
+#add{
+    padding-left: .5rem;
+    border: 1px solid rgb(0, 183, 255);
+}
+.focusing:focus{
+    box-shadow: 0px 0px 4px rgb(0, 255, 213);
+    outline: none ;
+}
+.aadharHeading{
+    font-weight: 900;
+}
+.aadhar-card{
+    background-image: url('./aadhar-card-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.aadhar-card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(2, 2, 2, 0.556); 
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+}
+.orange{
+    color: orange;
+}
+.green{
+    color: rgb(40, 175, 40);
+}
+#aadharCardImg{
+    width: 10rem;
+    height: 8rem;
+}
+.head{
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #92b3ff;
+}
+#btnSubmit{
+    width: 100%;
+    height: 2.5rem;
+    background-image: linear-gradient(140deg, orange 0%, white 40%,  white 60% ,rgb(40, 175, 40) 100%);
+    border-radius: 1.5rem;
+    border: none;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+#btnSubmit:hover{
+    box-shadow: 0px 0px 10px #447bfd;
+}
+.last-section{
+    text-align: center;
+}
+#termsconds{
+    accent-color: rgb(56, 255, 56);
+}
+#aadharForm{
+    width: 100%;
+}

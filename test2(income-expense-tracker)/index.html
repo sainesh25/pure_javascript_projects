@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="inputs">
+        <input type="number" placeholder="Enter Amt" id="amount">
+        <input type="text" placeholder="Type of expense/income" id="typeOfExpIn">
+        <select name="" id="dropdownList">
+            <option value="select" disabled selected>Select...</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+    </div>
+    <div class="btn">
+        <button id="entrybtn">ENTRY</button>
+    </div>
+
+    <h3 id="totalSavingHead2">Total Savings : <span id="totalSavingHead"></span></h3>
+
+    <div class="income-expense-tables">
+
+        <div class="income-side">
+            <h2 class="in-head">Income</h2>
+        <table class="exp-green" id="incomeTable">
+            
+            <tr>
+                <td class="sr-no">No.</td>
+                <td class="amtval">Amount</td>
+                <td class="item-des">Items Description</td>
+            </tr>
+        </table>
+        <h4 class="totalExpense2">Total Income : <span id="totalIncome"></span></h4>
+    </div>
+    
+    <div class="expense-side">
+        <h2 class="exp-head">Expense</h2>
+        <table class="exp-red" id="expenseTable">
+            <tr>
+                <td class="sr-no">No.</td>
+                <td class="amtval">Amount</td>
+                <td class="item-des">Items Description</td>
+            </tr>
+        </table>
+        <h4 class="totalExpense2">Total Expense : <span id="totalExpense"></span></h4>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
