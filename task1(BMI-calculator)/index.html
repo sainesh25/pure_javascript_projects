@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+
+        <div class="calculator">
+            
+            <h1 class="calculator-head">BMI Calculator</h1>
+            <div class="weight-inputs">
+                <label for="weight">Weight: </label>
+                <input class="numbers" type="number" id="weight" placeholder="Enter in Kgs"> 
+                <select id="weightUnit">
+                    <option value="kgs">kgs</option>
+                    <option value="pounds">pounds</option>
+                </select>
+                <span id="required" class="required">*</span>
+            </div>
+            
+            <div class="weight-inputs">
+                <label for="height">Height: </label>
+                <input class="numbers" type="number" id="height" placeholder="Enter in meters">
+                <select id="heightUnit">
+                    <option value="meters">meters</option>
+                    <option value="cms">cms</option>
+                </select>
+                <span id="required2" class="required">*</span>
+            </div>
+        
+            <button id="calculateBtn">Calculate</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div class="bmi-status">
+            <div class="Underweight">Underweight: 18.5</div>
+            <div class="Normal">Normal: 18.5 - 25</div>
+            <div class="Overweight">Overweight: 25 - 30</div>
+            <div class="Obese">Obese: 30 - 35</div>
+          </div>
+          <h4 id="answer"></h4>
+          <h4 id="range"></h4>    
+    </main>
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
