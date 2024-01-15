@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.inputAndBtn{
+    display: flex;
+}
+#todoIn{
+    width: 18rem;
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem 1rem ;
+    border: 1px solid rgba(42, 42, 42, 0.507);
+}
+#todoIn:focus{
+    outline: none;
+}
+#todoBtn{
+    margin: auto .5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    border: none;
+    padding: .5rem;    
+}
+.list-dec{
+    background-color: #A5FD84;
+    /* width: 20rem; */
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    text-align: left;
+}
+.todoInfo{
+    width: 26rem;
+}
+.todo-element{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.crossedLine{
+    text-decoration: line-through;
+}
+.buttonDiv{
+    display: flex;
+}
+.buttonDecoration{
+    border: none;
+    background-color: #A5FD84;
+    font-size: 1rem;
+    color: black;
+    margin: 0 .5rem;
+}
+.liDiv{
+    width: 25rem;
+    /* text-align: center;
+    margin: auto; */
+}
+
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 992px){
+
+}
+@media (max-width: 767px){
+    .todo-heading{
+        font-size: 1.6rem;
+    }
+    #todoIn{
+        font-size: .7rem;
+    }
+    .inputAndBtn{
+        flex-wrap: wrap;
+    }
+    li{
+        font-size: .7rem;   
+    }
+    #todoBtn{
+        font-size: .7rem;
+    }
+    h4{
+        font-size: .9rem;
+    }
+    .list-dec{
+        width: 16rem;
+    }
+}
+@media (max-width: 576px){
+    .todo-heading{
+        font-size: 1.4rem;
+    }
+    main{
+
+    }
+    .inputAndBtn{
+        width: 18rem;
+        justify-content: center;
+        align-items: center;
+    }
+    #todoIn{
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    #todoBtn{
+        padding:  .5rem 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    .liDiv{
+        width: 17rem;
+        text-align: center;
+    }
+    li{
+        margin: auto;
+    }
+
+    #list{
+
+        /* width: 16rem; */
+        padding: 0;
+    }
+    .list-dec{
+        width: 100%;
+        padding: .3rem;
+    }
+}   
