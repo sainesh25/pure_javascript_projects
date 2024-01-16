@@ -87,14 +87,7 @@ calculateBtn.addEventListener('click', (e) => {
 });
 
 clearBtn.addEventListener('click', (e) => {
-    tipPercentIn.value = '';
-    gstPercentIn.value = '';
-    priceIn.value = '';
-    tipTotalAmt.innerHTML = 0;
-    taxTotalAmt.innerHTML = 0;
-    grandTotalAmt.innerHTML = 0;
-    splitAmt.value = 0;
-
+    location.reload();
 });
 
 splitBillBtn.addEventListener('click', (e) => {
